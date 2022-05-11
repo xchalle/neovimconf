@@ -1,0 +1,27 @@
+#include "T.hpp"
+
+T::T()
+{
+	std::cout << "T default constructor called" << std::endl;
+	return ;
+}
+
+T::T(const T &rhs)
+{
+	std::cout << "T copy constructor called" << std::endl;
+	*this = rhs;
+	return ;
+}
+
+T	&T::operator=( const T &rhs)
+{
+	std::cout << "T copy assignement operator called" << std::endl;
+	return  *this;
+}
+
+T::~T()
+{
+	std::cout << "T destructor called" << std::endl;
+	return ;
+}
+

@@ -1,0 +1,19 @@
+#ifndef _T_H_
+#define _T_H_
+
+#include <iostream>
+#include <string>
+
+class T
+{
+	public:
+
+	T();
+	T(const T &rhs);
+	~T();
+	T &operator=(const T &rhs);
+	protected:
+	private:
+};
+
+#endif
